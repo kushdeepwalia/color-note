@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Note</title>
+        <script src="https://kit.fontawesome.com/5d1ac06756.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../dist/css/style.min.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="header_webname">
+                <div class="header_webname_logo">
+                    <img src="../resources/images/logo.jpg" alt="Web Logo">
+                </div>
+                <div class="header_webname_name">
+                    <span>Color Note</span>
+                </div>
+            </div>
+            <div class="header_searchbox">
+                <div class="example" style="margin:auto;max-width:300px">
+                    <input type="search" class="header_searchbox_input" name="searchNote" id="searchNote" placeholder="Search..">
+                    <button id="searchBtn" class="header_searchbox_button"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </header>
+        <nav id="nav" class="nav">
+            <ul>
+                <div onmouseenter="display(this)" onmouseleave="hide(this)">
+                    <li class="menuItem active" id="notes">
+                        <i class="far fa-sticky-note"></i>
+                    </li>
+                    <span class="title">
+                        Notes
+                    </span>
+                </div>
+                <div onmouseenter="display(this)" onmouseleave="hide(this)">
+                    <li class="menuItem" id="checklist">
+                        <i class="fas fa-tasks"></i>
+                    </li>
+                    <span class="title">
+                        Checklist
+                    </span>
+                </div>
+                <div onmouseenter="display(this)" onmouseleave="hide(this)">
+                    <li class="menuItem" id="calendar">
+                        <i class="far fa-calendar-alt"></i>
+                    </li>
+                    <span class="title">
+                        Calendar
+                    </span>
+                </div>
+            </ul>
+        </nav>
+        <section class="notes_sec activeSec">
+            <div class="notes_sec_container">
+                <div class="notes_item">
+                    <div class="notes_head">
+                        <div class="notes_heading">Hello</div>
+                        <div class="notes_functions">
+                            <div class="threedots">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                            <div class="notes_functions_list animate-start">
+                                <ul>
+                                    <li>lorem2</li>
+                                    <li>lorem2</li>
+                                    <li>lorem2</li>
+                                    <li>lorem2</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="notes_content">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sit autem placeat excepturi obcaecati quae iusto reiciendis fugiat delectus incidunt quasi ipsam nemo facere, tempora soluta repellat voluptatum iste sapiente alias aliquid, debitis ea consequatur. Voluptate, accusamus amet. Quos, accusamus. lorem lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, voluptate.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <script src="./script.js"></script>
+    </body>
+</html>
